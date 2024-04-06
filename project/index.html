@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.483));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-black font-['helvetica_now_display']">
+        <div class="imagecontainer w-full h-screen relative">
+            <div class="maincard z-[3] w-full absolute h-screen">
+                <img class="w-full h-full object-cover"
+                    src=""
+                    alt="">
+            </div>
+            <div class="incomingcard z-[2] w-full absolute h-screen"></div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between ">
+            <div class="navbar px-5 py-6 flex justify-between items-center text-white">
+                <div class="prflimg w-[3rem] h-[3rem] overflow-hidden rounded-full">
+                    <img class="w-full h-full object-cover"
+                        src=""
+                        alt="">
+                </div>
+                <h3 class="text-2xl font-medium tracking-tight">They liked you.</h3>
+                <div
+                    class="chaticon relative flex items-center justify-center rounded-full w-[3rem] h-[3rem] bg-white/20">
+                    <i class="opacity-80 ri-chat-3-fill"></i>
+                    <div
+                        class="badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y-[5px] translate-x-[3px] w-5 h-5 bg-red-600">
+                        <h5 class="text-[13px] font-[400]">5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-6 w-full">
+                    <div class="flex gap-4">
+                        <i
+                            class="w-[1.6rem] h-[1.6rem] flex items-center justify-center rounded-full bg-white font-semibold ri-corner-left-up-line"></i>
+                        <h3 class="text-white">USA, California</h3>
+                    </div>
+                    <div class="flex gap-5 text-white mt-1">
+                        <h1 class="text-6xl font-regular tracking-tighter">Victoria</h1>
+                        <h1 class="text-6xl font-regular tracking-tighter opacity-60">20</h1>
+                    </div>
+                    <div class="tags flex gap-3 text-white mt-4">
+                        <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                            <i class="text-sm ri-music-2-fill"></i>
+                            <h3 class="text-sm tracking-tight">Music</h3>
+                        </div>
+                        <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                            <i class="text-sm ri-music-2-fill"></i>
+                            <h3 class="text-sm tracking-tight">Music</h3>
+                        </div>
+                        <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full gap-3">
+                            <i class="text-sm ri-music-2-fill"></i>
+                            <h3 class="text-sm tracking-tight">Music</h3>
+                        </div>
+                    </div>
+                    <div class="bio text-white/80 mt-3">
+                        <h3 class="text-xl">Bio</h3>
+                        <p class="text-sm mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nostrum
+                            ipsum quia eum rerum dolorum.</p>
+                    </div>
+                    <div class="text-3xl flex item-start mt-3 gap-1">
+                        <button class="py-3 font-semibold rounded-lg w-1/2 bg-white">
+                            <i class="ri-close-line"></i>
+                        </button>
+                        <button class="py-3 font-semibold rounded-lg w-1/2 bg-red-600">
+                            <i class="text-white ri-heart-2-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
